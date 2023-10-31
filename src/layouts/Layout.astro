@@ -1,9 +1,10 @@
 ---
 interface Props {
 	title: string;
+	navPage: string;
 }
 
-const { title } = Astro.props;
+const { title, navPage } = Astro.props;
 
 import Header from '../components/Header.astro';
 ---
@@ -20,7 +21,7 @@ import Header from '../components/Header.astro';
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header />
+		<Header navPage={navPage} />
 		<slot />
 	</body>
 </html>

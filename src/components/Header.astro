@@ -1,11 +1,19 @@
+---
+interface Props {
+    navPage: string;
+}
+
+const { navPage } = Astro.props;
+---
+
 <header>
     <nav>
         <img src="/eco-ita/imgs/logo.png" alt="Logo" />
         <h1>Eco Ita</h1>
         <ul>
-            <li><a href="/eco-ita">Home</a></li>
-            <li><a href="/eco-ita/prodotti">Prodotti</a></li>
-            <li><a href="/eco-ita/chi-siamo">Chi siamo</a></li>
+            <li><a class={navPage === "home" && "active"} href="/eco-ita">Home</a></li>
+            <li><a class={navPage === "prodotti" && "active"} href="/eco-ita/prodotti">Prodotti</a></li>
+            <li><a class={navPage === "chi-siamo" && "active"} href="/eco-ita/chi-siamo">Chi siamo</a></li>
         </ul>
     </nav>
 </header>
@@ -24,13 +32,18 @@
     }
     ul {
         list-style: none;
+        margin-left: 3rem;
     }
     li {
         display: inline;
-        margin-right: 50px;
+        margin-right: 5rem;
     }
     ul li a {
         color: black;
         text-decoration: none;
+        font-size: 1.2rem;
+    }
+    ul li a.active {
+        text-decoration: underline;
     }
 </style>
