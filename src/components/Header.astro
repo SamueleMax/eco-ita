@@ -4,11 +4,14 @@ interface Props {
 }
 
 const { navPage } = Astro.props;
+
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
 ---
 
 <header>
     <nav>
-        <img src="/eco-ita/imgs/logo.png" alt="Logo" />
+        <Image src={logo} alt="Logo" />
         <h1>Eco Ita</h1>
         <ul>
             <li><a class={navPage === "home" && "active"} href="/eco-ita">Home</a></li>
@@ -24,10 +27,11 @@ const { navPage } = Astro.props;
         align-items: center;
         padding: 0 2rem;
         height: 80px;
-        background: linear-gradient(to right, #24b624, #90d825);
+        background: #36ab0f;
     }
     img {
         width: 50px;
+        height: auto;
         margin-right: 1rem;
     }
     ul {
@@ -36,7 +40,7 @@ const { navPage } = Astro.props;
     }
     li {
         display: inline;
-        margin-right: 5rem;
+        margin-right: 6rem;
     }
     ul li a {
         color: black;

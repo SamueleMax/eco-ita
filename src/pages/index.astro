@@ -1,15 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout title="Home - Eco Ita" navPage="home">
 	<main>
-
+		<Hero />
+		<section class="text">
+			<h2>Introduzione</h2>
+			<p>La nostra missione è guidare l'innovazione sostenibile in Italia, trasformando scarti industriali in soluzioni ecologiche all'avanguardia. Riscopri il valore nascosto nella produzione e unisciti a noi nel plasmare un futuro più verde e innovativo.</p>
+			<h2>Perché affidarsi a noi</h2>
+			
+		</section>
 	</main>
 </Layout>
 
 <style>
-	main {
-		padding: 1rem 10rem;
+	.text {
+		padding: 1rem 25rem;
+		font-size: 1.2rem;
 	}
 </style>

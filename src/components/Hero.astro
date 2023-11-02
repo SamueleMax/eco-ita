@@ -1,0 +1,42 @@
+<section>
+    <h1>Eco Ita</h1>
+    <p>Trasformiamo scarti industriali in innovazioni Made in Italy</p>
+    <a href="/eco-ita/prodotti">I nostri prodotti &rarr;</a>
+</section>
+
+<style>
+    section {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/eco-ita/imgs/hero.jpg');
+        background-size: cover;
+        background-position: bottom;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3rem;
+        color: white;
+        margin: 0;
+    }
+    p {
+        font-size: 1.5rem;
+        color: white;
+    }
+    a {
+        background: white;
+        text-decoration: none;
+        color: black;
+        padding: 1rem;
+        transition: background-color 400ms, color 400ms;
+    }
+    a:hover {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: calc(1rem - 2px);
+        transition: background-color 400ms, color 400ms;
+    }
+</style>
