@@ -1,23 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import FeaturedCard from '../components/FeaturedCard.astro';
+
+import iconItaly from '../assets/icon-italy.png';
+import iconRecycle from '../assets/icon-recycle.png';
+import iconMedal from '../assets/icon-medal.png';
+
 ---
 
 <Layout title="Home - Eco Ita" navPage="home">
+	<Hero />
 	<main>
-		<Hero />
-		<section class="text">
+		<section>
 			<h2>Introduzione</h2>
-			<p>La nostra missione è guidare l'innovazione sostenibile in Italia, trasformando scarti industriali in soluzioni ecologiche all'avanguardia. Riscopri il valore nascosto nella produzione e unisciti a noi nel plasmare un futuro più verde e innovativo.</p>
-			<h2>Perché affidarsi a noi</h2>
-			
+			<p>La nostra missione è guidare l'innovazione sostenibile in Italia, trasformando scarti industriali in soluzioni ecologiche all'avanguardia. Riscopri il valore nascosto nella produzione e unisciti a noi nel plasmare un futuro più verde e innovativo.</p>	
 		</section>
-	</main>
+		<section>
+			<h2>Perché affidarsi a noi</h2>
+			<div class="why-us">
+				<FeaturedCard src={iconItaly} alt="Bandiera italiana" text="Siamo orgogliosi di rappresentare l'innovazione made in Italy, offrendo soluzioni di alta qualità e un'impronta ecologica positiva." />	
+				<FeaturedCard src={iconRecycle} alt="Icona del riciclo" text="La nostra missione è ridurre l'impatto ambientale, trasformando scarti industriali in risorse preziose per un futuro più sostenibile." />	
+				<FeaturedCard src={iconMedal} alt="Icona di una medaglia" text="Con una storia di successo nella realizzazione di progetti e soluzioni sostenibili, siamo il partner fidato per le tue esigenze di innovazione ecologica." />		
+			</div>
+		</section>
+	</section>
 </Layout>
 
 <style>
-	.text {
+	main {
 		padding: 1rem 25rem;
 		font-size: 1.2rem;
+	}
+	.why-us {
+		display: flex;
+		gap: 1rem;
 	}
 </style>
