@@ -3,10 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import FeaturedCard from '../components/FeaturedCard.astro';
 
-import iconItaly from '../assets/icon-italy.png';
-import iconRecycle from '../assets/icon-recycle.png';
-import iconMedal from '../assets/icon-medal.png';
-
+import iconItaly from '../assets/icons/icon-italy.png';
+import iconRecycle from '../assets/icons/icon-recycle.png';
+import iconMedal from '../assets/icons/icon-medal.png';
 ---
 
 <Layout title="Home - Eco Ita" navPage="home">
@@ -19,9 +18,15 @@ import iconMedal from '../assets/icon-medal.png';
 		<section>
 			<h2>Perché affidarsi a noi</h2>
 			<div class="why-us">
-				<FeaturedCard src={iconItaly} alt="Bandiera italiana" text="Siamo orgogliosi di rappresentare l'innovazione made in Italy, offrendo soluzioni di alta qualità e un'impronta ecologica positiva." />	
-				<FeaturedCard src={iconRecycle} alt="Icona del riciclo" text="La nostra missione è ridurre l'impatto ambientale, trasformando scarti industriali in risorse preziose per un futuro più sostenibile." />	
-				<FeaturedCard src={iconMedal} alt="Icona di una medaglia" text="Con una storia di successo nella realizzazione di progetti e soluzioni sostenibili, siamo il partner fidato per le tue esigenze di innovazione ecologica." />		
+				<FeaturedCard
+				src={iconItaly} alt="Bandiera italiana"
+				text="Siamo orgogliosi di rappresentare l'innovazione made in Italy, offrendo soluzioni di alta qualità e un'impronta ecologica positiva." />	
+				<FeaturedCard
+				src={iconRecycle} alt="Icona del riciclo"
+				text="La nostra missione è ridurre l'impatto ambientale, trasformando scarti industriali in risorse preziose per un futuro più sostenibile." />	
+				<FeaturedCard
+				src={iconMedal} alt="Icona di una medaglia"
+				text="Con una storia di successo nella realizzazione di progetti e soluzioni sostenibili, siamo il partner fidato per le tue esigenze di innovazione ecologica." />		
 			</div>
 		</section>
 	</section>
@@ -29,7 +34,10 @@ import iconMedal from '../assets/icon-medal.png';
 
 <style>
 	main {
-		padding: 1rem 25rem;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 750px;
 		font-size: 1.2rem;
 	}
 	.why-us {

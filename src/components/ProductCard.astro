@@ -1,0 +1,43 @@
+---
+const { title, text, url, src, alt } = Astro.props;
+
+import { Image } from 'astro:assets';
+---
+
+<div class="product-card">
+    <Image src={src} alt={alt} />
+    <div>
+        <h3>{title}</h3>
+        <p>{text}</p>
+        <a href={url} target="_blank" rel="noreferrer noopener">Vai al sito &rarr;</a>
+    </div>
+</div>
+
+<style>
+    .product-card {
+        display: flex;
+        gap: 1rem;
+        border: 2px solid #828282;
+        padding: 1rem;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        margin: 0;
+    }
+    img {
+        width: 200px;
+        height: auto;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        padding: 0.5rem;
+        transition: background-color 200ms;
+    }
+    a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        transition: background-color 200ms;
+    }
+</style>

@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+
+import orangefiberImage from '../assets/products/orangefiber.jpg';
+import vegeaImage from '../assets/products/vegea.jpg';
+---
+
+<Layout title="Prodotti - Eco Ita" navPage="prodotti">
+    <main>
+        <section>
+            <h1>I nostri prodotti</h1>
+            <ProductCard
+            title="Orange Fiber"
+            text="Orange Fiber è la prima azienda al mondo a produrre tessuti sostenibili a partire dai sottoprodotti dell'industria di trasformazione degli agrumi attraverso un innovativo processo brevettato nel 2014 in Italia ed esteso successivamente nei principali paesi produttori di succhi di agrumi in tutto il mondo."
+            url="https://orangefiber.it/it/"
+            src={orangefiberImage} alt="Tessuto fabbricato da Orange Fiber" />
+            <ProductCard
+            title="Vegea"
+            text="Vegea è un'azienda pioniera nella produzione di tessuti sostenibili ottenuti dal recupero di sottoprodotti industriali. Grazie a un processo innovativo, brevettato in Italia nel 2016, Vegea ha esteso la sua missione ecologica nei principali centri di produzione di scarti industriali a livello globale, dimostrandosi leader nell'ecoinnovazione tessile."
+            url="https://www.vegeacompany.com/"
+            src={vegeaImage} alt="Scarpa fabbricata da Vegea" />
+        </section>
+    </main>
+</Layout>
+
+<style>
+	main {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1000px;
+		font-size: 1.2rem;
+	}
+</style>
