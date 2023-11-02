@@ -4,6 +4,9 @@ import ProductCard from '../components/ProductCard.astro';
 
 import orangefiberImage from '../assets/products/orangefiber.jpg';
 import vegeaImage from '../assets/products/vegea.jpg';
+import karshofImage from '../assets/products/karshof.png';
+import farinadigrilloImage from '../assets/products/farina-di-grillo.jpeg';
+import pelletImage from '../assets/products/pellet.png'
 ---
 
 <Layout title="Prodotti - Eco Ita" navPage="prodotti">
@@ -20,6 +23,21 @@ import vegeaImage from '../assets/products/vegea.jpg';
             text="Vegea è un'azienda pioniera nella produzione di tessuti sostenibili ottenuti dal recupero di sottoprodotti industriali. Grazie a un processo innovativo, brevettato in Italia nel 2016, Vegea ha esteso la sua missione ecologica nei principali centri di produzione di scarti industriali a livello globale, dimostrandosi leader nell'ecoinnovazione tessile."
             url="https://www.vegeacompany.com/"
             src={vegeaImage} alt="Scarpa fabbricata da Vegea" />
+            <ProductCard
+            title="Karshof"
+            text="La farina di scarto di carciofi potrebbe essere ottenuta dai residui della lavorazione dei carciofi, come le foglie esterne e altre parti non commestibili. Dopo una lavorazione adeguata, questi scarti potrebbero essere essiccati e macinati per creare una polvere fine."
+            url="https://circularfiber.it/"
+            src={karshofImage} alt="Un carciofo" />
+            <ProductCard
+            title="Farina di grillo"
+            text="La farina di grillo può essere prodotta attraverso il processo di allevamento e coltivazione di grilli in ambienti controllati. Dopo la raccolta, i grilli possono essere essiccati e successivamente macinati per ottenere una polvere fine. Questo processo può coinvolgere la rimozione di parti non commestibili, come le ali."
+            url="https://www.my-personaltrainer.it/alimentazione/farina-di-grillo.html"
+            src={farinadigrilloImage} alt="Pasta fatta con farina di grillo" />
+            <ProductCard
+            title="Pellet"
+            text="I pellet sostenibili sono generalmente prodotti utilizzando scarti di legname provenienti da foreste gestite in modo sostenibile o da industrie del legno che operano con pratiche ecocompatibili. La materia prima potrebbe derivare da alberi abbattuti per motivi di gestione forestale, riducendo al minimo l'impatto sull'ambiente."
+            url="https://it.wikipedia.org/wiki/Pellet_(combustibile)"
+            src={pelletImage} alt="Pellet" />
         </section>
     </main>
 </Layout>
