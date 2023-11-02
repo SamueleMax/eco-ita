@@ -40,4 +40,10 @@ import { Image } from 'astro:assets';
         background: rgba(0, 0, 0, 0.3);
         transition: background-color 200ms;
     }
+
+    @media (max-width: 800px) {
+        img {
+            display: none;
+        }
+	}
 </style>

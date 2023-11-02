@@ -19,4 +19,11 @@ import { Image } from 'astro:assets';
         width: 300px;
         height: auto;
     }
+
+    @media (max-width: 800px) {
+        div {
+            flex-direction: column;
+            gap: 0;
+        }
+	}
 </style>
