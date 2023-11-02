@@ -1,5 +1,5 @@
 # Eco Ita
-### Creato da Samuele Max, Davide Piaggi, Daniele Kim, Simone Kristo, Giuseppe Vaccaro e Tamer Qaddura
+### Creato da Samuele Max, Davide Piaggi, Daniele Kim, Simone Kristo, Giuseppe Vaccaro, Tamer Qaddura e Federico Meda
 
 ## Sito Web
 Abbiamo creato questo sito come parte del progetto di educazione civica sui prodotti made in italy creati a partire dagli scarti industriali. Purtroppo abbiamo avuto 3 ore in meno per lavorare, quindi il sito non è completamente finito e non è stato reso responsive (ovvero non funziona sui dispositivi mobili, ma solo sui computer o sui tablet grandi). Si può visualizzare a questo link: [https://samuelemax.github.io/eco-ita/](https://samuelemax.github.io/eco-ita/).
@@ -20,3 +20,6 @@ Il sito è stato creato in HTML e CSS utilizzando [Astro](https://astro.build/),
 - src/components: componenti riutilizzabili scritti in html e css
 - src/layouts: il file di layout che contiene le dichiarazioni html, head, e altre cose globali per tutte le pagine
 - src/pages: le pagine del sito
+
+## Crediti
+Il codice è stato scritto interamente da noi. Le immagini sono state prese da internet. Alcune icone sono state prese gratuitamente da [Flaticon](https://www.flaticon.com/).

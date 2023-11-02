@@ -1,0 +1,22 @@
+---
+const { text, src, alt } = Astro.props;
+
+import { Image } from 'astro:assets';
+---
+
+<div>
+    <p>{text}</p>    
+    <Image src={src} alt={alt} />
+</div>
+
+<style>
+    div {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    img {
+        width: 300px;
+        height: auto;
+    }
+</style>
