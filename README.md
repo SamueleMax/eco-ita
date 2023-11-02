@@ -2,7 +2,7 @@
 ### Creato da Samuele Max, Davide Piaggi, Daniele Kim, Simone Kristo, Giuseppe Vaccaro, Tamer Qaddura e Federico Meda
 
 ## Sito Web
-Abbiamo creato questo sito come parte del progetto di educazione civica sui prodotti made in italy creati a partire dagli scarti industriali. Purtroppo abbiamo avuto 3 ore in meno per lavorare, quindi il sito non è completamente finito e non è stato reso responsive (ovvero non funziona sui dispositivi mobili, ma solo sui computer o sui tablet grandi). Si può visualizzare a questo link: [https://samuelemax.github.io/eco-ita/](https://samuelemax.github.io/eco-ita/).
+Abbiamo creato questo sito come parte del progetto di educazione civica sui prodotti made in italy creati a partire dagli scarti industriali. Purtroppo abbiamo avuto 3 ore in meno per lavorare, quindi il sito non è completamente finito, ed è stato reso responsive (ovvero compatibile con dispositivi mobili) all'ultimo, e oltre ad essere un'esperienza non ottimale mancano alcune immagini se visto da telefono. Si può visualizzare a questo link: [https://samuelemax.github.io/eco-ita/](https://samuelemax.github.io/eco-ita/).
 
 ## Come clonare
 Requisiti:
